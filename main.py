@@ -18,8 +18,8 @@ def extract_data_from_html(html_file):
         return None
 
     data = {
-        "title": safe_extract('/html/body/div/h1/text()'),
-        "period": safe_extract('/html/body/div/h1/dt/text()'),
+        "File Name": html_file.split('html_files/')[1],
+        "Period": safe_extract('/html/body/div/h1/dt/text()'),
         "Strategy CAGR": safe_extract('/html/body/div/div[2]/table/tbody/tr[5]/td[2]'),
         "Benchmark CAGR": safe_extract('/html/body/div/div[2]/table/tbody/tr[5]/td[3]'),
         "Strategy MDD": safe_extract('/html/body/div/div[2]/table/tbody/tr[15]/td[2]'),
