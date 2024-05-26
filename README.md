@@ -1,1 +1,1 @@
-# quantking-automation
+# quantus-automation
